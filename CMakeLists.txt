@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(graph)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+SET(GCC_COVERAGE_COMPILE_FLAGS "-Xpreprocessor -lpthread")
+SET(GCC_COVERAGE_LINK_FLAGS    "-Xpreprocessor -lpthread")
+add_executable(graph main.cc Edge.h Graph.h InputAdapter.h Node.h)
